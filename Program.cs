@@ -2,10 +2,15 @@
 using System.Xml.Linq;
 
 namespace Module6
-    ///Задание 6.2.2
-    ///Добавьте в класс Pen, указанный ниже, 2 конструктора:
-    /// - без параметров, когда поля color и cost заполняются значениями Черный и 100.
-    /// - с 2 параметрами: penColor и penCost.
+    ///Задание 6.2.8
+    ///Создайте класс Rectangle для представления прямоугольников удовлетворяющий следующим требованиям:
+    ///- Класс должен содержать целочисленные поля для сторон a и b.
+    ///- Класс должен содержать метод Square, возвращающий площадь прямоугольника(произведение сторон).
+    ///- Класс должен содержать 3 конструктора: 
+    ///  - с 2 параметрами, когда a != b, 
+    ///  - с 1 параметром, когда a == b, 
+    ///  - и конструктор без параметров по умолчанию, в котором стороны будут заполняться как a = 6, b = 4.
+
 {
     internal class Program
     {
@@ -14,22 +19,35 @@ namespace Module6
             Console.WriteLine("Hello, World!");
         }
     }
-    class Pen
+    class Rectangle
     {
-        public string color;
-        public int cost;
+        public int a;
+        public int b;
 
         // Конструктор 1
-        public Pen()
+        public Rectangle(int num1, int num2)
         {
-            color = "Черный";
-            cost = 100;
+            a = num1;
+            b = num2;
         }
+        
         // Конструктор 2
-        public Pen(string penColor, int penCost)
+        public Rectangle(int num)
         {
-            color = penColor;
-            cost = penCost;
+            a = num;
+            b = num;
         }
+        
+        // Конструктор 2
+        public Rectangle()
+        {
+            a = 6;
+            b = 4;
+        }
+        public int Square()
+        {
+            return a * b;
+        }
+
     }
 }
