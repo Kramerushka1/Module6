@@ -3,10 +3,11 @@ using System.Xml.Linq;
 
 namespace Module6
 {
-    //Задание 6.3.2
-    //Для класса Bus реализуйте метод PrintStatus,
-    //который будет сообщать о количестве пассажиров в автобусе, если они есть.
-    //Или сообщать, что автобус пуст.
+    /// <summary>
+    /// Задание 6.5.2
+    /// </summary>
+    ///В классах нужно объявить поля для длин сторон (радиус)
+    ///и методы для получения площади и периметра (длины окружности) без их реализации и без конструкторов.
 
     class Program
     {
@@ -15,21 +16,42 @@ namespace Module6
             
         }
     }
-    class Bus
+    class Triangle
     {
-        public int? Load;
-
-        public void PrintStatus()
+        public int sideA, sideB, sideC;
+        public double Area()
         {
-            if (Load.HasValue)
-            {
-                Console.WriteLine("В авбтобусе {0} пассажиров", Load.Value);
-            }
-            else
-            {
-                Console.WriteLine("Автобус пуст!");
-            }
-        }
 
+        }
+        public double Perimeter()
+        {
+
+        }
+    }
+    
+    class Circle
+    {
+        public int radius;
+        public double Area()
+        {
+
+        }
+        public double Length()
+        {
+
+        }
+    }
+    class Square
+    { 
+    
+        public int side;
+        public double Area()
+        {
+            
+        }
+        public double Perimeter()
+        {
+
+        }
     }
 }
