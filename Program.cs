@@ -3,11 +3,13 @@ using System.Xml.Linq;
 
 namespace Module6
 {
-    /// <summary>
-    /// Задание 6.5.2
-    /// </summary>
-    ///В классах нужно объявить поля для длин сторон (радиус)
-    ///и методы для получения площади и периметра (длины окружности) без их реализации и без конструкторов.
+    ///<summary>
+    ///Задание 6.6.1
+    ///</summary>
+    ///Напишите класс светофор (TrafficLight) с 2 методами:
+    ///  Закрытый метод ChangeColor, принимающий 1 строковый параметр color.
+    ///  Открытый метод GetColor, который не принимает параметры, но выдает строковое значение цвета.
+    ///Методы реализовывать не нужно.
 
     class Program
     {
@@ -16,40 +18,13 @@ namespace Module6
             
         }
     }
-    class Triangle
+    class TrafficLight
     {
-        public int sideA, sideB, sideC;
-        public double Area()
+        private void ChangeColor(string color)
         {
 
         }
-        public double Perimeter()
-        {
-
-        }
-    }
-    
-    class Circle
-    {
-        public int radius;
-        public double Area()
-        {
-
-        }
-        public double Length()
-        {
-
-        }
-    }
-    class Square
-    { 
-    
-        public int side;
-        public double Area()
-        {
-            
-        }
-        public double Perimeter()
+        public string GetColor()
         {
 
         }
